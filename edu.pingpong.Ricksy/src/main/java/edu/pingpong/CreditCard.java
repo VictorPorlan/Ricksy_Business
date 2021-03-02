@@ -10,28 +10,30 @@ public class CreditCard {
         this.owner = owner;
         this.number = number;
     }
-    boolean pay(double precio){
-        if(this.credit > precio){
+
+    boolean pay(double precio) {
+        if (this.credit >= precio) {
             this.credit -= precio;
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
-    String number(){
+
+    String number() {
         return this.number;
     }
-    String cardOwner(){
+
+    String cardOwner() {
         return this.owner;
     }
-    double credit(){
+
+    double credit() {
         return this.credit;
     }
+
     @Override
-    public String toString(){
-        return "owner: " + cardOwner() + "\n" +
-        "number: " + number() + "\n" + 
-        "credit: " + credit() + this.symbol;
+    public String toString() {
+        return "owner: " + cardOwner() + "\n" + "number: " + number() + "\n" + "credit: " + credit() + this.symbol;
     }
 }
