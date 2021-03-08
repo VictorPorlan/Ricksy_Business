@@ -1,2 +1,3 @@
 # Ricksy_Business
-Ejercicio de Ricksy business en Java usando POO
+Ejercicio de Ricksy business en Java usando POO.
+En estre programa creamos un programa que maneja un sistema de venta de UFOS y paquetes de bienvenida en una fiesta de Rick. Usando la tarjeta de credito del cliente podemos asignarle un UFO en la clase UfosPark, y venderle paquetes de bienvenida en el CrystalExpender. Usando la clase receptivo podemos automatizar la venta de estos productos añadiendole los negocios que queramos. Por ejemplo si añadimos al receptivo un UfoPark y un CrystalExpender, cualquier tarjeta de crédito que le pasemos al receptivo será usada en esos dos negocios que le hemos añadido.
